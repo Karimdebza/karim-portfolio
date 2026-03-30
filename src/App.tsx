@@ -1,18 +1,21 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-// import About from "./components/About";
-// import Footer from "./components/Footer";
-
-import ProjectsSection from "./sections/ProjectSection";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Projects from "./components/sections/ProjectCard";
+import ContactForm from "./components/sections/ContactForm";
 
 export default function App() {
   return (
-    <div className="font-sans text-gray-900 bg-white">
+    <div className="bg-black text-white min-h-screen font-sans">
       <Navbar />
-      <Hero />
-      {/* <About /> */}
-       <ProjectsSection />
-      {/* <Footer /> */}
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <ContactForm />
+      </main>
+      <Footer />
     </div>
   );
 }
